@@ -1,5 +1,3 @@
-krypt do skopiowania i wklejenia do pliku modal.js.
-
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),

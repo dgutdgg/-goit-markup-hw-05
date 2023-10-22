@@ -73,6 +73,9 @@ body  {
     margin-right: 0;
   }
 
+.list_nav span {
+    color: #404bbf;
+}
 .header_address {
     display: flex;
     margin-left: auto;
@@ -80,8 +83,7 @@ body  {
 }
 
 .header_address .link {
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .list_address {
@@ -137,7 +139,6 @@ body  {
 .link_address {
     color: var(--SLATE, #434455);
     font-weight: 400;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .header_background {
@@ -242,6 +243,8 @@ body  {
     gap: 24px; 
     margin-bottom: 72px;
     display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .visually-hidden {
@@ -429,6 +432,7 @@ body  {
     column-gap: 24px;
     flex-wrap: wrap;
     list-style: none;
+    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .portofio_link:hover,
@@ -443,7 +447,6 @@ body  {
 
 .portofio_link {
     display: block;
-    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .photo_portfolio_wrapper {
@@ -462,9 +465,8 @@ body  {
     padding: 40px 32px;
     background-color: #4D5AE5;
     translate: 0 100%;
-    transition-timing-function: linear;
-    transition-duration: 250ms;
     opacity: 0;  
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo_portfolio_wrapper:hover p {
@@ -480,6 +482,10 @@ body  {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     margin-bottom: 72px
+}
+
+.header_last .link {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers_calc {
@@ -640,7 +646,7 @@ body  {
     background-color: #FCFCFC;
     border-radius: 4px; 
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {

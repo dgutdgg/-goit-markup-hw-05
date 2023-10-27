@@ -30,8 +30,8 @@
         </nav>
         <address class="header_address">
           <ul class="list list_address">
-            <li><a href="mailto:info@devstudio.com" class="link link-address">info@devstudio.com</a></li>
-            <li><a href="tel:+110001111111" class="link link-address">+11 (000) 111-11-11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="link_address link ">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111" class="link link_address">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
       </div>
@@ -275,7 +275,7 @@
           </p>
         </div>
         <div>
-          <p class="social_text_footer">Social media</p>
+          <p class="mainheader_text_footer">Social media</p>
           <ul class="list social_links_footer">
             <li class="social_icon_footer">
               <a href="/" class="social_media_link">
@@ -299,6 +299,19 @@
             </li>
           </ul>
         </div>
+        <div class="field_email_footer"> 
+        <label class="mainheader_text_footer" for="user_email">Subscribe</label>
+              <input class="input_signup_footer" type="email" name="email" id="user_email" placeholder="Email"/>
+            </div>  
+            <div class="button_subscribe_footer">
+              <p class="mainheader_text_footer">Subscribe</p>
+              <button type="submit" class="button_subscribe button_subscribe_text">Subscribe
+          <svg class="icon_subscribe_send">
+              <use width="24" height="24" href="./images/icons.svg#icon-Frame-3"></use>
+          </svg></button>
+        </div>
+
+
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -308,9 +321,40 @@
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-      </div>
+    <fieldset class="modal_forms">
+      <legend class="modal_title">Leave your contacts and we will call you back</legend>
+      <form name="signup_form" autocomplete="on" novalidate>
+        <label class="label_signup_form" for="user_name">Name</label>
+        <div class="field_name"> 
+        <svg class="field-icon">
+            <use width="18" height="18" href="./images/icons.svg#icon-person-black-18dp-1"></use></svg>
+            <input class="input_signup_form" type="name" name="name" id="user_name"/>
+        </div>
+          <label class="label_signup_form" for="user_phone">Phone</label>
+          <div class="field_phone"> 
+          <svg class="field-icon-2">
+              <use width="18" height="18" href="./images/icons.svg#icon-phone-black-18dp-1"></use></svg>
+                <input class="input_signup_form" type="phone" name="phone" id="user_phone"/>
+        </div>
+        <label class="label_signup_form" for="user_email">Email</label>
+        <div class="field_email"> 
+          <svg class="field-icon-3">
+              <use width="18" height="18" href="./images/icons.svg#icon-email-black-18dp-1"></use></svg>
+              <input class="input_signup_form" type="email" name="email" id="user_email"/>
+          </div>  
+        <label class="label_signup_form" for="user_comment">Comment
+          <textarea class="comment_field" name="feedback" rows="5" placeholder="Text input"></textarea>
+        </label>
+            <div class="checkbox_modal">
+              <input type="checkbox" id="checkbox" name="user_privacy">
+              <label class="checkbox_text_privacy" for="user_privacy"> 
+        I accept the terms and conditions of the <a href="" class="checkbox_text_link">Privacy Policy</a>
+      </label>
+            </div>
+        <button type="submit" class="button_send button_send_text">Send</button>
+      </form></fieldset>
     </div>
-
+</div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

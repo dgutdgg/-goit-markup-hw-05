@@ -81,7 +81,6 @@ body  {
 .header_address {
     display: flex;
     margin-left: auto;
-    font-weight: 400;
 }
 
 .header_address .link {
@@ -94,7 +93,6 @@ body  {
     align-items: center;
     gap: 40px;
     margin-left: auto;
-    
 }
 
 .section {
@@ -426,7 +424,6 @@ body  {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none; 
-
 }
 
 .list_portf {
@@ -466,16 +463,13 @@ body  {
     inset: 0;
     padding: 40px 32px;
     background-color: #4D5AE5;
-    opacity: 0; 
-    transform: translateY(100%);   
+    transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio_link:focus .text_up,
 .portfolio_link:hover .text_up {
     translate: 0 0;
-    opacity: 1;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
     transform: translateY(0%);
 }
 
@@ -580,7 +574,7 @@ body  {
     width: 264px;
 }
 
-.social_text_footer {
+.mainheader_text_footer {
     color: var(--WHITE, #FFF);
     font-family: Roboto;
     font-size: 16px;
@@ -620,6 +614,49 @@ body  {
 
 .social_media_fill {
     fill: var(--CLOUD, #F4F4FD);
+}
+
+.field_email_footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.input_signup_footer {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+
+.button_subscribe_footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.button_subscribe {
+    position: relative;
+    background: var(--IRIS, #4D5AE5);
+    border-radius: 4px; 
+    min-width: 169px;
+    border: none;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.button_subscribe_text {
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px; 
+}
+
+.icon_subscribe_send {
+    position: absolute;
 }
 
 .backdrop {
@@ -678,3 +715,134 @@ body  {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal_title {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;  
+    padding-top: 72px;
+}
+
+.modal_forms {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: none; 
+    margin-left: 24px; 
+}
+
+.comment_field {
+    margin-bottom: 16px;
+    height: 120px; 
+}
+
+.checkbox_modal {
+    width: 360px;
+    display:inline-block;
+    border-style: none;
+    padding-bottom: 24px;
+}
+
+.checkbox_text_privacy {
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+    letter-spacing: 0.48px; 
+}
+
+.checkbox_text_link {
+    color: var(--IRIS, #4D5AE5);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline; 
+}
+
+.label_signup_form {
+    display: flex;
+    flex-direction: column;
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px; 
+  }
+
+.input_signup_form {
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    margin-bottom: 8px;
+}
+
+.input_signup_form:hover,
+.input_signup_form:focus {
+    border-color: var(--IRIS, #4D5AE5); 
+}
+
+.field_name {
+    position: relative;
+}
+
+.field-icon {
+	position: absolute;
+    margin-left: 16px;
+    margin-top: 11px;
+}
+
+.field_phone {
+    position: relative;
+}
+
+.field-icon-2 {
+	position: absolute;
+    margin-left: 16px;
+    margin-top: 11px;
+}
+
+.field_email {
+    position: relative;
+}
+
+.field-icon-3 {
+	position: absolute;
+    margin-left: 16px;
+    margin-top: 11px;
+}
+
+.button_send {
+    padding: 16px 32px;
+    background: var(--IRIS, #4D5AE5);
+    border-radius: 4px; 
+    margin: 0 auto;
+    text-align: center;
+    min-width: 169px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.button_send_text {
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px; 
+}
+
+textarea {
+    margin-bottom: 56px;
+}
